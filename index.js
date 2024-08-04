@@ -56,6 +56,7 @@ app.post("/register", async (req, res) => {
     }
     else{
         console.log("user exist");
+        res.redirect("/error");
     }
 
     } catch (error) {
