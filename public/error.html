@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Success</title>
+    <title>Registration Error</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,8 +13,10 @@
             <div class="col-md-6">
                 <div class="card mt-5 text-center">
                     <div class="card-body">
-                        <h1 class="card-title">Success!</h1>
-                        <p class="card-text">Your registration was successful. Thank you for signing up!</p>                    </div>
+                        <h1 class="card-title error">Error!</h1>
+                        <p class="card-text error">User already exists. Please try again.</p>
+                        <a href="/" class="btn btn-danger">Back to Home</a>
+                    </div>
                 </div>
             </div>
         </div>

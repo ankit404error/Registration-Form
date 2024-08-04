@@ -6,6 +6,8 @@ const dotenv = require("dotenv");
 const app = express();
 dotenv.config();
 
+app.use(express.static(__dirname + '/public'));
+
 const port = process.env.PORT || 8080;
 
 const username = process.env.MONGODB_USERNAME;
@@ -66,11 +68,11 @@ app.post("/register", async (req, res) => {
 });
 
 app.get("/success", (req, res) => {
-    res.sendFile(__dirname + "/success.html");
+    res.sendFile(__dirname + "/public/success.html");
 });
 
 app.get("/error", (req, res) => {
-    res.sendFile(__dirname + "/error.html");
+    res.sendFile(__dirname + "/public/error.html");
 });
 
 app.listen(port, () => {
