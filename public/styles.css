@@ -1,26 +1,21 @@
-/* styles.css */
-
-/* General body styling */
 body {
-    background-color: #f4f7f6; /* Light grey background */
+    background-color: #f4f7f6;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Container styling */
 .container {
     margin-top: 50px;
-    max-width: 100%; /* Ensure container does not exceed viewport width */
-    padding: 0 15px; /* Add horizontal padding */
+    max-width: 100%;
+    padding: 0 15px;
 }
 
-/* Card styling */
 .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* To ensure no overflow on hover effects */
+    overflow: hidden;
 }
 
 .card:hover {
@@ -28,9 +23,8 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Card header styling */
 .card-header {
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color: #007bff;
     color: #fff;
     border-bottom: none;
     border-radius: 10px 10px 0 0;
@@ -40,10 +34,9 @@ body {
 }
 
 .card-header:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
+    background-color: #0056b3;
 }
 
-/* Card title styling */
 .card-title {
     font-size: 1.5rem;
     font-weight: 600;
@@ -52,24 +45,22 @@ body {
 }
 
 .card-title.success {
-    color: #28a745; /* Green color for success */
+    color: #28a745;
 }
 
 .card-title.error {
-    color: #dc3545; /* Red color for error */
+    color: #dc3545;
 }
 
 .card-title:hover {
-    color: #e0e0e0; /* Slightly lighter color on hover */
+    color: #e0e0e0;
 }
 
-/* Card body styling */
 .card-body {
     padding: 30px;
     position: relative;
 }
 
-/* Text styling */
 .card-text {
     font-size: 1.2rem;
     color: #555;
@@ -78,14 +69,13 @@ body {
 }
 
 .card-text.success {
-    color: #28a745; /* Green color for success text */
+    color: #28a745;
 }
 
 .card-text.error {
-    color: #dc3545; /* Red color for error text */
+    color: #dc3545;
 }
 
-/* Button styling */
 .btn {
     border-radius: 5px;
     font-weight: bold;
@@ -104,16 +94,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Button focus effect */
 .btn:focus {
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
 }
 
-/* Form group transition */
 .form-group {
     transition: margin-bottom 0.3s ease;
-}
-
-.form-group:not(:last-child) {
     margin-bottom: 20px;
 }
